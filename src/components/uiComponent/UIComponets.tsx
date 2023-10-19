@@ -5,6 +5,7 @@ import {
   HeroContainerContent,
   HeroContainerOverlay,
   HomeSectionContainer,
+  InputSectionContainer,
   PropertySectionContainer,
 } from './style';
 
@@ -20,6 +21,17 @@ export const HeroSection: React.FC<{ children: ReactNode }> = ({ children }) => 
   );
 };
 
+export const InputSection: React.FC<{ children: ReactNode }> = ({ children }) => {
+  return (
+    <>
+      <InputSectionContainer>
+        <HeroContainerOverlay>
+          <HeroContainerContent>{children}</HeroContainerContent>
+        </HeroContainerOverlay>
+      </InputSectionContainer>
+    </>
+  );
+};
 export const HomeSection: React.FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <>

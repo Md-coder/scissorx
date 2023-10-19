@@ -7,6 +7,7 @@ import { Properties } from '../layouts/main/properties';
 import { WhyScissors } from '../layouts/main/whyScissors';
 import { PriceCards } from '../layouts/main/priceCards';
 import { PricingAction } from '../layouts/main/pricingAction';
+import { InputFieldSection } from '../layouts/main/inputSection';
 export const HomePage: React.FC = () => {
   return (
     <>
@@ -18,6 +19,7 @@ export const HomePage: React.FC = () => {
       <PriceSection />
       <PriceCards />
       <PricingAction />
+      <InputFieldSection />
     </>
   );
 };
