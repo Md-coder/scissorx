@@ -1,4 +1,7 @@
-import { HomePage } from './pages/home';
+import { HomePage } from "./pages/home";
+import { LoginPage } from "./pages/login";
+import { RedirectPage } from "./pages/redirectPage";
+import { SignupPage } from "./pages/signup";
 
 export interface IRoute {
   path: string;
@@ -9,26 +12,51 @@ export interface IRoute {
 }
 
 export const paths = {
-  home: '/',
-  features: '/#features',
-  pricing: '/#pricing',
-  analytics: '/#analytics',
-  faq: '/#faq',
+  login: "/login",
+  signup: "/signup",
+  home: "/",
+  features: "/#features",
+  pricing: "/#pricing",
+  analytics: "/#analytics",
+  faq: "/#faq",
+  scissor: "/scissor/:alias",
+  rocket: "/rocket/:alias",
 };
 
 export const pageRoutes: IRoute[] = [
   {
     path: paths.home,
-    name: 'Home Page',
+    name: "Home Page",
     component: HomePage,
     authGuard: false,
     noAuthGuard: false,
   },
-  // {
-  //   path:paths.features,
-  //   name:'Features Page',
-  //   component:
-  //   authGuard:false,
-  //   noAuthGuard: false
-  // }
+  {
+    path: paths.login,
+    name: "Login Page",
+    component: LoginPage,
+    authGuard: false,
+    noAuthGuard: false,
+  },
+  {
+    path: paths.signup,
+    name: "Signup Page",
+    component: SignupPage,
+    authGuard: false,
+    noAuthGuard: false,
+  },
+  {
+    path: paths.scissor,
+    name: "scissor",
+    component: RedirectPage,
+    authGuard: true,
+    noAuthGuard: false,
+  },
+  {
+    path: paths.rocket,
+    name: "rocket",
+    component: RedirectPage,
+    authGuard: true,
+    noAuthGuard: false,
+  },
 ];

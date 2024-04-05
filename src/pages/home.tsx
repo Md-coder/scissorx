@@ -8,6 +8,9 @@ import { WhyScissors } from '../layouts/main/whyScissors';
 import { PriceCards } from '../layouts/main/priceCards';
 import { PricingAction } from '../layouts/main/pricingAction';
 import { InputFieldSection } from '../layouts/main/inputSection';
+import { Faq } from '../layouts/main/faq';
+import { LinkOptimization } from '../layouts/main/linkOptimization';
+import { Footer } from '../layouts/main/footer';
 export const HomePage: React.FC = () => {
   return (
     <>
@@ -20,6 +23,9 @@ export const HomePage: React.FC = () => {
       <PriceCards />
       <PricingAction />
       <InputFieldSection />
+      <Faq />
+      <LinkOptimization />
+      <Footer />
     </>
   );
 };

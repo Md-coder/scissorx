@@ -10,7 +10,6 @@ import {
   Typography,
 } from '@mui/material';
 import React from 'react';
-import { HeroSection } from '../../components/uiComponent/UIComponets';
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 const basicPlans: string[] = [
   'Unlimited URL Shortening',
