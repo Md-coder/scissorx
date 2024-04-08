@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# Scissor App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In this app we are able to shorten long urls into custom urls and qr codes
+
+## App
+https://scissorx.vercel.app/
 
 ## Available Scripts
 
